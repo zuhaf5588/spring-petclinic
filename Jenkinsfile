@@ -54,7 +54,7 @@ pipeline {
                 echo 'Deploy the code'
                 script{
                     
-                 docker.withRegistry( 'https://registry.hub.docker.com', registryCredential ) {
+                 docker.withRegistry( '', registryCredential ) {
                   dockerImage.push("$BUILD_NUMBER")
                   dockerImage.push('latest')
                  }}
