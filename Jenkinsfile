@@ -37,7 +37,11 @@ pipeline {
             steps {
                 echo 'Deploy the code'
                 
-                sh ' dockerImage = docker.build imagename '
+                script {
+                    
+                    ' dockerImage = docker.build imagename '
+                    
+                }
                   
                 
             } 
