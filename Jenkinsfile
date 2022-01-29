@@ -6,7 +6,7 @@ pipeline {
     registryCredential = 'Dockerhubcreds'
     dockerImage = ''
   }
-    agent {label 'worker1'}
+    agent any
 
     stages {
         
