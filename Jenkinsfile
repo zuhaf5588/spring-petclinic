@@ -33,7 +33,7 @@ pipeline {
             
             
             
-            stage('DEPLOY') {
+            stage('DOCKERIZE') {
             steps {
                 echo 'Deploy the code'
                 
